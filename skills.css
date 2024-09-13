@@ -1,0 +1,126 @@
+/* General Styles */
+
+body {
+    background: #081b29;
+    color: #ededed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #00abf0;
+  }
+  
+  /* Skills Section */
+  .skills {
+    padding: 100px 10%;
+    background: #081b29;
+  }
+  
+  .skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .skills-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #00abf0;
+    margin-bottom: 50px;
+  }
+  
+  .skill-item {
+    background: #0a2e42;
+    border: 2px solid #00abf0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ededed;
+    margin-bottom: 10px;
+  }
+  
+  .skill-item p {
+    font-size: 16px;
+    color: #ededed;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .skills {
+      padding: 80px 5%;
+    }
+  
+    .skills-content h1 {
+      font-size: 36px;
+    }
+  
+    .skill-item h3 {
+      font-size: 20px;
+    }
+  
+    .skill-item p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skills {
+      padding: 60px 5%;
+    }
+  
+    .skills-content h1 {
+      font-size: 32px;
+    }
+  
+    .skill-item h3 {
+      font-size: 18px;
+    }
+  
+    .skill-item p {
+      font-size: 14px;
+    }
+  }
+  
